@@ -30,12 +30,20 @@ a {
     margin: 0 auto;
 }
 
+header {
+    position: sticky;
+    top: 0px;
+    margin-top: 30px;
+    background: white;
+    z-index: 50;
+    padding: 15px 0px;
+}
+
 .header__inner {
     display: flex;
     justify-content: space-between;
     height: 72px;
     align-items: center;
-    margin-top: 60px;
 }
 
 .menu-list-link-active {
@@ -57,7 +65,7 @@ a {
 }
 
 .menu-list-link{
-    font-weight: 700;
+    font-weight: 500;
     font-size: 20px;
     text-decoration: none;
     list-style-type: none;
@@ -77,12 +85,12 @@ a {
     margin-top: 94px;
     margin-bottom: 75px;
     transform: translateY(-50px);
-    transition: opacity 1s;
+    transition: all 1s;
 }
 
 .section__about-me.element-show {
     opacity: 1;
-    transition: opacity 1s;
+    transition: all 1s;
     transform: translateY(0) ;
 }
 
@@ -126,7 +134,7 @@ a {
 .section__info-contacts {
     font-weight: 500;
     font-size: 16px;
-    margin-top: 73px;
+    margin-top: 70px;
 }
 
 .section__info-using {
@@ -209,13 +217,13 @@ a {
     text-align: left;
     padding-top: 50px;
     transform: translateY(-50px);
-    transition: opacity 1s;
+    transition: all 1s;
 }
 
 .section__work_item.element-show {
     opacity: 1;
     transform: translateY(0) ;
-    transition: opacity 1s;
+    transition: all 1s;
 }
 
 
