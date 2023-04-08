@@ -12,7 +12,6 @@ spanBlock.forEach(item => {
   item.addEventListener('click', clickInfo)
 });
 
-
 function clickInfo () {
   this.classList.toggle('line_animation')
   let sectionWork = this.parentNode
@@ -25,7 +24,6 @@ function clickInfo () {
   } 
 }
 
-
 function onEntry(entry) {
   entry.forEach(change => {
     if (change.isIntersecting) {
@@ -34,16 +32,29 @@ function onEntry(entry) {
   });
 }
 
+function addActive(entry) {
+  entry.forEach(change => {
+    if (change.isIntersecting) {
+     change.target.classList.add('active');
+    }
+  });
+}
+
 let options = {
   threshold: [0.5] };
 let observer = new IntersectionObserver(onEntry, options);
+let addLinksActive = new IntersectionObserver(addActive, options);
 let elements = document.querySelectorAll('.section__about-me');
 let elements1 = document.querySelectorAll('.section__work_item');
+let linkElement = document.querySelector('.link1')
 
 for (let elm of elements) {
   observer.observe(elm);
+  addLinksActive.observe(linkElement)
 }
 
 for (let elm of elements1) {
   observer.observe(elm);
 }
+
+

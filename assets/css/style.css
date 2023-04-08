@@ -46,7 +46,7 @@ header {
     align-items: center;
 }
 
-.menu-list-link-active {
+.active {
     font-weight: 700;
     font-size: 20px;
     text-decoration: none;
@@ -226,8 +226,6 @@ header {
     transition: all 1s;
 }
 
-
-
 .work_block-info {
     max-height: 0;
     margin-top: 20px;
@@ -247,8 +245,6 @@ header {
     justify-content: center;
     transition: ease-in-out 250ms;
 }
-
-
 
 .text__info {
     text-align: justify;
