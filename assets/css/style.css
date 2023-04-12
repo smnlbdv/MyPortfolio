@@ -1,4 +1,3 @@
-
 * {
     padding: 0;
     margin: 0;
@@ -11,7 +10,6 @@ html {
 button {
     font-family:"Poppins", sans-serif;
 }
-
 
 body {
     font-family:"Poppins", sans-serif;
@@ -35,7 +33,7 @@ a {
 header {
     position: sticky;
     top: 0px;
-    margin-top: 30px;
+    margin-top: 15px;
     background: white;
     z-index: 50;
     padding: 15px 0px;
@@ -189,7 +187,6 @@ header {
     transition: all 250ms;
 }
   
-
 .section__work {
     font-size: 50px;
     text-align: center;
@@ -314,8 +311,9 @@ header {
     -webkit-transform: translateZ(0);
     -ms-transform: translateZ(0);
     transform: translateZ(0);
-  }
-  .loader:before {
+}
+
+.loader:before {
     width: 50%;
     height: 50%;
     background: #65abf8;
@@ -324,8 +322,9 @@ header {
     top: 0;
     left: 0;
     content: '';
-  }
-  .loader:after {
+}
+
+.loader:after {
     background: white;
     width: 75%;
     height: 75%;
@@ -337,8 +336,9 @@ header {
     left: 0;
     bottom: 0;
     right: 0;
-  }
-  @-webkit-keyframes load3 {
+}
+
+@-webkit-keyframes load3 {
     0% {
       -webkit-transform: rotate(0deg);
       transform: rotate(0deg);
@@ -347,8 +347,9 @@ header {
       -webkit-transform: rotate(360deg);
       transform: rotate(360deg);
     }
-  }
-  @keyframes load3 {
+}
+
+@keyframes load3 {
     0% {
       -webkit-transform: rotate(0deg);
       transform: rotate(0deg);
@@ -357,7 +358,7 @@ header {
       -webkit-transform: rotate(360deg);
       transform: rotate(360deg);
     }
-  }
+}
 
 @media (max-width: 950px) {
     .section__info-hello {
