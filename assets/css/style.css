@@ -48,10 +48,6 @@ header {
 
 .menu-list-link.active {
     font-weight: 700;
-    font-size: 20px;
-    text-decoration: none;
-    list-style-type: none;
-    cursor: pointer;
     color: #007FEF;
 }
 
@@ -77,6 +73,11 @@ header {
     width: 100%;
     display: flex;
     justify-content: center;
+}
+
+.contacts__list_item a {
+    text-decoration:none;
+    color: #121213;
 }
 
 .section__about-me {
