@@ -4,26 +4,27 @@ const swiper = new Swiper('.swiper', {
     },
 });
 
-const spanBlock = document.querySelectorAll('.block__span')
-const childSpanBlock = spanBlock.childNodes
-const blockInfo = document.querySelector('.work_block-info')
+const infoButtons = document.querySelectorAll('.button')
+const popup = document.querySelector('.popup')
+const closePopup = popup.querySelector('.svg')
 
-spanBlock.forEach(item => {
-  item.addEventListener('click', clickInfo)
+infoButtons.forEach(button => {
+  button.addEventListener('click', clickButton)
 });
 
-function clickInfo () {
-  this.classList.toggle('line_animation')
-  let sectionWork = this.parentNode
-  let sectionWorkChild = sectionWork.querySelector('.work_block-info')
-  let textChildInner = sectionWorkChild.querySelector('.text__info')
-  if(sectionWorkChild.offsetHeight == 0) {
-    sectionWorkChild.style = `max-height: ${textChildInner.offsetHeight}px`;
-  } else {
-    sectionWorkChild.style = `max-height: 0`;
-  } 
+function clickButton(e) {
+  popup.classList.toggle('active')
+  let blockInfo = e.target.parentNode.nextElementSibling.querySelector('.text__info').innerText
+  let popupInner = popup.querySelector('.inner__text')
+  popupInner.innerText = ""
+  popupInner.append(blockInfo)
 }
 
+closePopup.addEventListener('click',clickPopup)
+
+function clickPopup() {
+  popup.classList.toggle('active')
+}
 
 function onEntry(entry) {
   entry.forEach(change => {
