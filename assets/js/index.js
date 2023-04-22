@@ -4,26 +4,33 @@ const swiper = new Swiper('.swiper', {
     },
 });
 
-const infoButtons = document.querySelectorAll('.button')
+const infoButtons = document.querySelectorAll('.buttonInfo')
 const popup = document.querySelector('.popup')
 const closePopup = popup.querySelector('.svg')
+const popupButton = popup.querySelector('.inner__button')
 
 infoButtons.forEach(button => {
   button.addEventListener('click', clickButton)
 });
 
 function clickButton(e) {
+  document.querySelector('body').classList.add('noscroll')
   popup.classList.toggle('active')
   let blockInfo = e.target.parentNode.nextElementSibling.querySelector('.text__info').innerText
   let popupInner = popup.querySelector('.inner__text')
   popupInner.innerText = ""
   popupInner.append(blockInfo)
+  let linkInfo = e.target.parentNode.nextElementSibling.querySelector('.link__info').getAttribute('href')
+  let link = popupInner.nextElementSibling.querySelector('.button__link_info').setAttribute('href', linkInfo)
+  console.log(link)
 }
 
 closePopup.addEventListener('click',clickPopup)
 
+
 function clickPopup() {
   popup.classList.toggle('active')
+  document.querySelector('body').classList.remove('noscroll')
 }
 
 function onEntry(entry) {

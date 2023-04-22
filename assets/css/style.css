@@ -41,6 +41,10 @@ header {
     z-index: 50;
 }
 
+body.noscroll {
+    overflow: hidden;
+}
+
 .header__inner {
     display: flex;
     justify-content: space-between;
@@ -215,11 +219,23 @@ header {
     font-family: "Poppins", sans-serif;
 }
 
-.button:hover {
+.button:hover  {
     border: 1px solid #007FEF;
     transform: scale(0.97);
     color: #007FEF;
     background-color: #ffffff;
+}
+
+.button__link_info {
+    color: white;
+}
+
+.button:hover .button__link_info {
+    color: #007FEF;
+}
+
+.link__info {
+    color: white;
 }
 
 .popup{
@@ -256,16 +272,22 @@ header {
     text-align: justify;
 }
 
-.inner__block svg {
+.inner__block .svg {
     display: flex;
     width: 15px;
-    padding: 0 15px;
+    height: 15px;
+    padding: 15px 18px;
     margin-left: auto;
-    transition: transform 0.8s;
 }
 
-.inner__block svg:hover{
-    transform: rotate(360deg);
+.svg path{
+    fill: #007FEF;
+    transition: all 0.2s;
+}
+
+.svg:hover path{
+    fill: #f53232;
+    transition: all 0.2s;
 }
 
 .inner__button {
@@ -430,13 +452,13 @@ header {
 
 @media (max-width: 950px) {
     .section__info-hello {
-        font-size: 20px;
+        font-size: 15px;
     }
     .section__info-title {
-        font-size: 80px;
+        font-size: 60px;
     }
     .section__info-from {
-        font-size: 20px;
+        font-size: 15px;
     }
     .using__title {
         font-size: 15px;
@@ -444,13 +466,26 @@ header {
     .using__list {
         flex-wrap: wrap;
     }
+    .contacts__list {
+        font-size: 13px;
+    }
+    .using__list_item img {
+        height: 35px;
+        width: 35px;
+    }
   }
 
   @media (max-width: 860px) {
     .container__inner {
         flex-wrap: wrap;
+        
+    }
+    .section__image-me {
+        padding-top: 50px;
     }
     .swiper {
         max-height: 500px;
     }
   }
+
+  
