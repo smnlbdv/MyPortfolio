@@ -5,9 +5,13 @@ const swiper = new Swiper('.swiper', {
 });
 
 const infoButtons = document.querySelectorAll('.buttonInfo')
-const popup = document.querySelector('.popup')
+const popup = document.querySelector('.popup__info')
 const closePopup = popup.querySelector('.svg')
 const popupButton = popup.querySelector('.inner__button')
+const spanBlock = document.querySelector('.span__block')
+const popupBurger = document.querySelector('.popup__burger')
+const innerMenu = document.querySelector('.header__menu')
+const menuLink = document.querySelectorAll('.menu-list__item')
 
 infoButtons.forEach(button => {
   button.addEventListener('click', clickButton)
@@ -22,15 +26,17 @@ function clickButton(e) {
   popupInner.append(blockInfo)
   let linkInfo = e.target.parentNode.nextElementSibling.querySelector('.link__info').getAttribute('href')
   let link = popupInner.nextElementSibling.querySelector('.button__link_info').setAttribute('href', linkInfo)
-  console.log(link)
 }
 
-closePopup.addEventListener('click',clickPopup)
+if(closePopup) {
+  closePopup.addEventListener('click',clickPopup)
+}
+
 
 
 function clickPopup() {
   popup.classList.toggle('active')
-  document.querySelector('body').classList.remove('noscroll')
+  document.querySelector('body').classList.toggle('noscroll')
 }
 
 function onEntry(entry) {
@@ -90,4 +96,26 @@ observerLinkTwo.observe(linkWork);
 window.onload = function () {
   let preloader = document.getElementById('preloader');
   preloader.style.display = 'none'
+}
+
+spanBlock.addEventListener('click', openPopupBurger)
+
+function openPopupBurger() {
+  document.querySelector('body').classList.toggle('noscroll')
+  popupBurger.classList.toggle('active')
+  popupBurger.innerHTML = " "
+  let cloneMenu = innerMenu.cloneNode(true)
+  popupBurger.append(cloneMenu)
+}
+
+console.log(menuLink)
+
+menuLink.forEach(link => {
+  console.log(link)
+  link.addEventListener('click', clickLink)
+});
+
+function clickLink() {
+  document.querySelector('body').classList.toggle('noscroll')
+  popupBurger.classList.remove('active')
 }
