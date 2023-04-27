@@ -557,10 +557,23 @@ body.noscroll {
         display: block;
     }
     .popup__burger .menu-list-link {
+        display: block;
         text-align: left;
         font-size: 20px;
         padding-bottom: 15px;
     }
+    #popup__burger .menu-list-link {
+        text-align: left;
+    }
+    .button {
+        width: 142px;
+        height: 30px;
+        font-size: 14px;
+    }
+    .section__work {
+        padding-top: 78px;
+    }
+    
   }
 
 

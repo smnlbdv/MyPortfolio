@@ -11,7 +11,6 @@ const popupButton = popup.querySelector('.inner__button')
 const spanBlock = document.querySelector('.span__block')
 const popupBurger = document.querySelector('.popup__burger')
 const innerMenu = document.querySelector('.header__menu')
-const menuLink = document.querySelectorAll('.menu-list__item')
 
 infoButtons.forEach(button => {
   button.addEventListener('click', clickButton)
@@ -25,7 +24,7 @@ function clickButton(e) {
   popupInner.innerText = ""
   popupInner.append(blockInfo)
   let linkInfo = e.target.parentNode.nextElementSibling.querySelector('.link__info').getAttribute('href')
-  let link = popupInner.nextElementSibling.querySelector('.button__link_info').setAttribute('href', linkInfo)
+  popupInner.nextElementSibling.querySelector('.button__link_info').setAttribute('href', linkInfo)
 }
 
 if(closePopup) {
@@ -103,17 +102,16 @@ spanBlock.addEventListener('click', openPopupBurger)
 function openPopupBurger() {
   document.querySelector('body').classList.toggle('noscroll')
   popupBurger.classList.toggle('active')
-  popupBurger.innerHTML = " "
-  let cloneMenu = innerMenu.cloneNode(true)
+  popupBurger.innerHTML = ""
+  const cloneMenu = innerMenu.cloneNode(true)
   popupBurger.append(cloneMenu)
+  const menuLink = popupBurger.querySelectorAll('.menu-list__item')
+
+  menuLink.forEach(link => {
+    link.addEventListener('click', clickLink)
+  });
+
 }
-
-console.log(menuLink)
-
-menuLink.forEach(link => {
-  console.log(link)
-  link.addEventListener('click', clickLink)
-});
 
 function clickLink() {
   document.querySelector('body').classList.toggle('noscroll')
