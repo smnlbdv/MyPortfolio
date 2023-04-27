@@ -101,6 +101,7 @@ spanBlock.addEventListener('click', openPopupBurger)
 
 function openPopupBurger() {
   document.querySelector('body').classList.toggle('noscroll')
+  spanBlock.classList.toggle('active-span')
   popupBurger.classList.toggle('active')
   popupBurger.innerHTML = ""
   const cloneMenu = innerMenu.cloneNode(true)
@@ -116,4 +117,5 @@ function openPopupBurger() {
 function clickLink() {
   document.querySelector('body').classList.toggle('noscroll')
   popupBurger.classList.remove('active')
+  spanBlock.classList.toggle('active-span')
 }
