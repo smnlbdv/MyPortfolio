@@ -556,6 +556,11 @@ body.noscroll {
     .popup__burger .header__menu {
         display: block;
     }
+    .popup__burger .menu-list-link {
+        text-align: left;
+        font-size: 20px;
+        padding-bottom: 15px;
+    }
   }
 
 
