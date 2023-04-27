@@ -536,8 +536,7 @@ body.noscroll {
         display: none;
     }
     .section__about-me {
-        margin-bottom: 0;
-        padding-bottom: 100px;
+        margin-bottom: 100px;
     }
     .section__info-title {
         font-size: 50px;
