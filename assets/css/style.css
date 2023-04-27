@@ -52,11 +52,10 @@ body.noscroll {
     align-items: center;
 }
 
-.menu-list-link.active {
+.menu-list-link.active-link {
     display: block;
     font-weight: 700;
     color: #007FEF;
-    text-align: right;
 }
 
 .span__block {
@@ -75,6 +74,7 @@ body.noscroll {
 .menu-list__item {
     text-decoration: none;
     list-style-type: none;
+    text-align: right;
 }
 
 .menu-list-link{
@@ -550,17 +550,8 @@ body.noscroll {
         left: 0;
         transition: all 0.5s;
     }
-    .menu-list-link {
-        font-size: 25px;
-        text-align: right;
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
     .header__menu-list {
         margin-top: 80px;
-    }
-    .menu-list-link.active {
-        text-align: left;
     }
     .popup__burger .header__menu {
         display: block;

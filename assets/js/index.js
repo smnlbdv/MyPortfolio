@@ -69,9 +69,9 @@ let linkElement2 = document.querySelector('.link2')
 let observerLinkFirst = new IntersectionObserver(function (entries) {
   entries.forEach(function (entry) {
     if(entry.isIntersecting == true) {
-      linkElement.classList.add('active')
+      linkElement.classList.add('active-link')
     } else {
-      linkElement.classList.remove('active')
+      linkElement.classList.remove('active-link')
     }
   });
 });
@@ -79,9 +79,9 @@ let observerLinkFirst = new IntersectionObserver(function (entries) {
 let observerLinkTwo = new IntersectionObserver(function (entries) {
   entries.forEach(function (entry) {
     if(entry.isIntersecting == true) {
-      linkElement2.classList.add('active')
+      linkElement2.classList.add('active-link')
     } else {
-      linkElement2.classList.remove('active')
+      linkElement2.classList.remove('active-link')
     }
   });
 });
