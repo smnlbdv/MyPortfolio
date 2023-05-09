@@ -5,7 +5,7 @@ const swiper = new Swiper('.swiper', {
     },
 });
 
-//**Variable declaration **//
+//**Variable declaration**//
 const infoButtons = document.querySelectorAll('.buttonInfo')
 const popup = document.querySelector('.popup__info')
 const closePopup = popup.querySelector('.svg')
