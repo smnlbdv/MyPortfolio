@@ -325,7 +325,7 @@ body.noscroll {
 .section__work_item.element-show {
     opacity: 1;
     transform: translateY(0) ;
-    transition: transform 1s;
+    transition: all 1s;
 }
 .work_block-info {
     max-height: 0;
@@ -564,6 +564,13 @@ body.noscroll {
     }
     .section__image-me img {
         max-width: 450px;
+    }
+    .container__inner {
+        height: 600px;
+    }
+    .section__about-me.element-show {
+        display: flex;
+        align-items: center;
     }
   }
 
