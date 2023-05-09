@@ -507,6 +507,7 @@ body.noscroll {
     }
     .section__about-me {
         height: 85vh;
+        margin-top: 25px;
         margin-bottom: 100px;
     }
     .section__info-title {
