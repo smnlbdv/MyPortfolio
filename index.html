@@ -51,9 +51,17 @@
                                 <li class="contacts__list_item">Telegram: <a href="https://t.me/SemenLebedko" target="_blank">https://t.me/SemenLebedko</a></li>
                                 <li class="contacts__list_item">Email: mamontedinorog@yandex.by</li>
                             </ul>
+                            <ul class="contacts__list list__mobile">
+                                <li class="using__list_item" data-title="Telegram">
+                                    <a href="https://t.me/SemenLebedko" target="_blank"><img class="list__img" src="./assets/icons/telegramLogo.png"></a>
+                                </li>
+                                <li class="using__list_item" data-title="Email">
+                                    <a href="mailto:mamontedinorog@yandex.by" target="_blank"><img class="list__img" src="./assets/icons/yandexLogo.png"></a>
+                                </li>
+                            </ul>
                         </div>
                         <div class="section__info-using">
-                            <p class="using__title">Использую</p>
+                            <p class="using__title">Использую:</p>
                             <ul class="using__list">
                                 <li class="using__list_item" data-title="Figma"><img src="./assets/icons/figmaLogo.png" alt="Logo Figma"></li>
                                 <li class="using__list_item" data-title="Photoshop"> <img src="./assets/icons/adobePhotoshopLogo.png" alt="Logo Adobe Photoshop"></li>
@@ -66,35 +74,12 @@
                         </div>
                     </div>
                     <div class="section__image-me">
-                        <img src="./assets/images/backgroundIm.png" alt="">
+                        <picture class="section__image_picture">
+                            <source srcset="./assets/images/mobil-bg.png 1x" media="(max-width: 420px)">
+                            <img src="./assets/images/backgroundIm.png" alt="">
+                        </picture>
                     </div>
                 </div>
-            </div>
-        </section>
-        <section class="section__mobile">
-            <img class="img__mobile" src="./assets/images/mobil-bg.png" alt="">
-            <div class="section__info-contacts info-contacts_mobil">
-                <p class="contacts__title">Контакты:</p>
-                <ul class="contacts__list">
-                    <li class="using__list_item" data-title="Telegram">
-                        <img class="list__img" src="./assets/icons/telegramLogo.png"><a href="https://t.me/SemenLebedko" target="_blank"></a></img>
-                    </li>
-                    <li class="using__list_item" data-title="Email">
-                        <img class="list__img" src="./assets/icons/yandexLogo.png"><a href="mailto:mamontedinorog@yandex.by" target="_blank"></a></img>
-                    </li>
-                </ul>
-            </div>
-            <div class="section__info-using info-using__mobil">
-                <p class="using__title">Использую</p>
-                <ul class="using__list">
-                    <li class="using__list_item" data-title="Figma"><img src="./assets/icons/figmaLogo.png" alt="Logo Figma"></li>
-                    <li class="using__list_item" data-title="Photoshop"> <img src="./assets/icons/adobePhotoshopLogo.png" alt="Logo Adobe Photoshop"></li>
-                    <li class="using__list_item" data-title="AdobeXd"><img src="./assets/icons/adobeXdLogo.png" alt="Logo AdobeXd"></li>
-                    <li class="using__list_item" data-title="VSCode"><img src="./assets/icons/visualLogo.png" alt="Logo Visual Studio Code"></li>
-                    <li class="using__list_item" data-title="JavaScript"><img src="./assets/icons/jsLogo.png" alt="Logo Java Script"></li>
-                    <li class="using__list_item" data-title="Scss"><img src="./assets/icons/scssLogo.png" alt="Logo Scss"></li>
-                    <li class="using__list_item item-WebPack" data-title="WebPack"><img src="./assets/icons/webpackLogo.png" alt="Logo WebPack"></li>
-                 </ul>
             </div>
         </section>
         <section class="section__work" id="section__work">
