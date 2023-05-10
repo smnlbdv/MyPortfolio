@@ -506,7 +506,7 @@ body.noscroll {
         font-size: 15px;
     }
     .section__about-me {
-        height: 85vh;
+        height: 80vh;
         margin-top: 25px;
         margin-bottom: 100px;
     }
@@ -517,7 +517,7 @@ body.noscroll {
         padding-top: 0;
     }
     .section__about-me {
-        height: 90vh;
+        height: 80vh;
         margin-bottom: 0;
     }
     .header__menu {
