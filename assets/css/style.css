@@ -27,7 +27,6 @@ a {
 header {
     position: sticky;
     top: 0px;
-    margin-top: 15px;
     background: white;
     z-index: 50;
 }
