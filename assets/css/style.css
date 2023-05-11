@@ -111,7 +111,7 @@ body.noscroll {
     font-size: 14px;
 }
 .section__image-me img {
-    max-width: 95%;
+    max-width: 93%;
 }
 .section__image-me {
     display: flex;
@@ -124,7 +124,7 @@ body.noscroll {
 }
 .section__info-title {
     font-weight: 700;
-    font-size: 70px;
+    font-size: 65px;
     line-height: 1;
     color: #007FEF;
     padding: 15px 0px;
@@ -185,7 +185,7 @@ body.noscroll {
     font-size: 30px;
     text-align: center;
     font-weight: 500;
-    padding-top: 75px;
+    padding-top: 70px;
 }
 .button {
     display: flex;
@@ -288,6 +288,12 @@ body.noscroll {
     width: 800px;
     border-radius: 15px;
 }
+.swiper-button-next {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 50%;
+}
 .swiper,
 .swiper-container {
     max-width: 100%;
@@ -299,6 +305,11 @@ body.noscroll {
     height: 100%;
     object-fit: cover;
     object-position: top;
+}
+.block__button {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
 .swiper-pagination-bullet{
     width: 7px !important;
@@ -408,6 +419,13 @@ body.noscroll {
     bottom: 0;
     right: 0;
 }
+footer {
+    padding: 15px 0;
+    text-align: center;
+}
+.footer__text a {
+    color: #007FEF;
+}
 @-webkit-keyframes load3 {
     0% {
       -webkit-transform: rotate(0deg);
@@ -433,7 +451,7 @@ body.noscroll {
         font-size: 15px;
     }
     .section__info-title {
-        font-size: 60px;
+        font-size: 50px;
     }
     .section__info-from {
         font-size: 15px;
@@ -504,19 +522,15 @@ body.noscroll {
     .contacts__title {
         font-size: 15px;
     }
-    .section__about-me {
-        height: 80vh;
-        margin-top: 25px;
-        margin-bottom: 100px;
-    }
     .section__info-title {
-        font-size: 50px;
+        font-size: 40px;
     }
     .section__image-me {
         padding-top: 0;
     }
     .section__about-me {
         height: 80vh;
+        margin-top: 15px;
         margin-bottom: 0;
     }
     .header__menu {
