@@ -25,10 +25,11 @@ a {
     padding: 0 15px;
 }
 header {
-    position: sticky;
+    position: fixed;
     top: 0px;
     background: white;
     z-index: 50;
+    width: 100%;
 }
 body.noscroll {
     overflow: hidden;
@@ -90,9 +91,10 @@ body.noscroll {
     color: #121213;
 }
 .section__about-me {
+    display: flex;
+    align-items: center;
+    height: 100vh;
     opacity: 0;
-    margin-top: 45px;
-    margin-bottom: 120px;
     transform: translateY(-50px);
     transition: all 1s;
 }
@@ -161,6 +163,7 @@ body.noscroll {
     display: block; 
     position: relative;
     transition: all 250ms;
+    cursor: pointer;
 }
 .using__list_item::after {
     opacity: 0;
@@ -185,7 +188,10 @@ body.noscroll {
     font-size: 30px;
     text-align: center;
     font-weight: 500;
-    padding-top: 70px;
+    margin-top: 10px;
+}
+.section__work_title {
+    padding-top: 72px;
 }
 .button {
     display: flex;
@@ -266,7 +272,8 @@ body.noscroll {
     display: flex;
     width: 15px;
     height: 15px;
-    padding: 15px 18px;
+    margin: 15px 18px;
+    cursor: pointer;
     margin-left: auto;
 }
 .svg path{
@@ -529,8 +536,7 @@ footer {
         padding-top: 0;
     }
     .section__about-me {
-        height: 80vh;
-        margin-top: 15px;
+        height: 100vh;
         margin-bottom: 0;
     }
     .header__menu {
