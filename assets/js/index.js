@@ -10,6 +10,7 @@ const swiper = new Swiper('.swiper', {
     }
 });
 
+
 //**Variable declaration**//
 const infoButtons = document.querySelectorAll('.buttonInfo')
 const popup = document.querySelector('.popup__info')
