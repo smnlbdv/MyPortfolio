@@ -1,192 +1,242 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Сайт-портфолио Семёна Лебедева - это место, где вы можете ознакомиться с работами и проектами талантливого фронт-энд разработчика из Беларуси. Семён имеет большой опыт работы с различными клиентами, владеет HTML, CSS, JavaScript, React, Vue.js и Angular, а также имеет опыт в UI/UX дизайне и адаптивной вёрстке.">
     <meta name="keywords" content="Семён Лебедев, Портфолио, CSS, HTML, JS, JavaScript, SCSS, Беларусь, Верстальщик">
-    <link rel="stylesheet" href="./assets/font/stylesheet.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-    <link rel="apple-touch-icon" sizes="180x180" href="./assets/icons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./assets/icons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./assets/icons/favicon-16x16.png">
-    <link rel="manifest" href="./assets/icons/site.webmanifest">
-    <link rel="mask-icon" href="./assets/icons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="stylesheet" href="./css/style-min.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="../icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../icons/favicon-16x16.png">
+    <link rel="manifest" href="../icons/site.webmanifest">
+    <link rel="mask-icon" href="../icons/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#f4f4f4">
     <meta name="theme-color" content="#ffffff">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.2.0/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
     <title>MyPortfolio</title>
 </head>
 <body>
+
     <div class="preloader" id="preloader">
         <div class="loader"></div>
     </div>
-    <header>
-        <div class="container">
-            <div class="header__inner">
-                <div class="header__logo">
-                    <img src="./assets/icons/logo.png" alt="Logo My Portfolio">
-                </div>
-                <nav class="header__menu">
-                    <ul class="header__menu-list">
-                        <li class="menu-list__item"><a class="menu-list-link link1" href="#">Обо мне</a></li>
-                        <li class="menu-list__item"><a class="menu-list-link link2" href="#section__work">Мои работы</a></li>
-                    </ul>
-                </nav>
-                <div class="span__block">
-                    <span class="span__block_item"></span>
-                    <span class="span__block_item"></span>
-                    <span class="span__block_item"></span>
-                </div>
+
+    <header class="header">
+        <div class="header-inner container">
+            <nav class="header-menu">
+                <ul class="header__menu-list">
+                    <li class="menu-list__item"><a class="menu-list-link link1" href="#">Обо мне</a></li>
+                    <li class="menu-list__item"><a class="menu-list-link link2" href="#section-work">Мои работы</a></li>
+                </ul>
+            </nav>
+            <div class="span-block">
+                <span class="span-block_item"></span>
+                <span class="span-block_item"></span>
+                <span class="span-block_item"></span>
             </div>
         </div>
     </header>
+
     <main>
-        <section class="section__about-me" loading="lazy">
-            <div class="container">
-                <div class="container__inner">
-                    <div class="section__info-me">
-                        <p class="section__info-hello">Привет, меня зовут Семён</p>
-                        <h2 class="section__info-title">Frontend разработка</h2>
-                        <p class="section__info-from">Разработчик из <b>Беларуси</b></p>
-                        <div class="section__info-contacts">
-                            <p class="contacts__title">Контакты:</p>
-                            <ul class="contacts__list">
-                                <li class="contacts__list_item">Telegram: <a href="https://t.me/SemenLebedko" target="_blank">https://t.me/SemenLebedko</a></li>
-                                <li class="contacts__list_item">Email: <a href="mailto:mamontedinorog@yandex.by">mamontedinorog@yandex.by</a></li>
-                            </ul>
-                            <ul class="contacts__list list__mobile">
-                                <li class="using__list_item" data-title="Telegram">
-                                    <a href="https://t.me/SemenLebedko" target="_blank"><img class="list__img" src="./assets/icons/telegramLogo.png"></a>
-                                </li>
-                                <li class="using__list_item" data-title="Email">
-                                    <a href="mailto:mamontedinorog@yandex.by" target="_blank"><img class="list__img" src="./assets/icons/yandexLogo.png"></a>
-                                </li>
-                            </ul>
+        <section class="section-about container" loading="lazy">
+
+            <div class="container__inner">
+                <div class="section-about__information">
+
+                    <div class="section-about__text">
+
+                        <h1 class="section-about__hello">Привет, меня зовут Семён я</h1>
+                        <span class="section-about__title section-about_frontend">Frontend</span>
+                        <span class="section-about__title">разработчик</span>
+                        
+
+                        <div>
+                            <blockquote cite="https://www.huxley.net/bnw/four.html">
+                                <p>
+                                    Не важно, с какой скоростью ты двигаешься, главное - не останавливайся!
+                                </p>
+                            </blockquote>
+                            <p>— Кама Пуля</p>
                         </div>
-                        <div class="section__info-using">
-                            <p class="using__title">Использую:</p>
-                            <ul class="using__list">
-                                <li class="using__list_item" data-title="Figma"><img src="./assets/icons/figmaLogo.png" alt="Logo Figma"></li>
-                                <li class="using__list_item" data-title="Photoshop"> <img src="./assets/icons/adobePhotoshopLogo.png" alt="Logo Adobe Photoshop"></li>
-                                <li class="using__list_item" data-title="AdobeXd"><img src="./assets/icons/adobeXdLogo.png" alt="Logo AdobeXd"></li>
-                                <li class="using__list_item" data-title="VSCode"><img src="./assets/icons/vsCodeLogo.png" alt="Logo Visual Studio Code"></li>
-                                <li class="using__list_item" data-title="JavaScript"><img src="./assets/icons/jsLogo.png" alt="Logo Java Script"></li>
-                                <li class="using__list_item" data-title="Scss"><img src="./assets/icons/scssLogo.png" alt="Logo Scss"></li>
-                                <li class="using__list_item" data-title="Gulp"><img src="./assets/icons/gulpLogo.png" alt="Logo Gulp"></li>
-                            </ul>
-                        </div>
+
                     </div>
-                    <div class="section__image-me">
-                        <picture class="section__image_picture">
-                            <source srcset="./assets/images/mobil-bg.png 1x" media="(max-width: 420px)">
-                            <img src="./assets/images/backgroundIm.png" alt="">
-                        </picture>
+                    
+                    <div class="block-info__using">
+                        <p class="using__title">Использую:</p>
+                        <ul class="using__list">
+                            <li class="using__list_item" data-title="WordPress"><img src="./img/icons/wordpress.webp" alt="i"></li>
+                            <li class="using__list_item" data-title="HTML"><img src="./img/icons/html.webp" alt="i"></li>
+                            <li class="using__list_item" data-title="Figma"><img src="./img/icons/figma.webp" alt="i"></li>
+                            <li class="using__list_item" data-title="Scss"><img src="./img/icons/scssLogo.webp" alt="i"></li>
+                            <li class="using__list_item" data-title="JavaScript"><img src="./img/icons/js.webp" alt="i"></li>
+                        </ul>
                     </div>
+                    
+                    <div class="section-about__contacts">
+
+                        <p class="contacts__title">Контакты:</p>
+
+                        <ul class="contacts__list">
+                            <li class="contacts__list_item">Telegram: <a href="https://t.me/@SEEEEEEEEEEEEM1" target="_blank">https://t.me/@SEEEEEEEEEEEEM1</a></li>
+                            <li class="contacts__list_item">Email: <a href="mailto:lbdw.smn@gmail.com">lbdw.smn@gmail.com</a></li>
+                        </ul>
+
+                    </div>
+
                 </div>
+
+
             </div>
         </section>
-        <section class="section__work" id="section__work">
-            <div class="container">
-                <h4 class="section__work_title">Мои работы</h4>
-                <section class="section__work_list">
-                    <div class="section__work_item">
-                        <p class="work_item-title">Travel Agency</p>
-                        <div class="swiper">
+
+        <section class="section-work container" id="section-work">
+
+                <h2 class="section-work___title">Мои работы</h2>
+
+                <section class="section-work__list">
+
+                    <div class="section-work__item section-work__item_1">
+
+                        <span class="item__title">1. Lead4You</span>
+
+                        <div class="swiper swiper_1">
                             <div class="swiper-wrapper">
-                                <div class="swiper-slide"><img src="./assets/images/slide-3-1.jpg" alt="Main page site"></div>
-                                <div class="swiper-slide"><img src="./assets/images/slide-3-2.jpg" alt="Description"></div>
-                                <div class="swiper-slide"><img src="./assets/images/slide-3-3.jpg" alt="Why are we&"></div>
-                                <div class="swiper-slide"><img src="./assets/images/slide-3-4.jpg" alt="Info tour"></div>
-                                <div class="swiper-slide"><img src="./assets/images/slide-3-5.jpg" alt="Payment"></div>
+                                <div class="swiper-slide"><img src="./img/slide-1-1.webp" alt="i"></div>
+                                <div class="swiper-slide"><img src="./img/slide-1-2.webp" alt="i"></div>
+                                <div class="swiper-slide"><img src="./img/slide-1-3.webp" alt="i"></div>
+                                <div class="swiper-slide"><img src="./img/slide-1-4.webp" alt="i"></div>
+                                <div class="swiper-slide"><img src="./img/slide-1-5.webp" alt="i"></div>
+                                <div class="swiper-slide"><img src="./img/slide-1-6.webp" alt="i"></div>
+                                <div class="swiper-slide"><img src="./img/slide-1-7.webp" alt="i"></div>
+                                <div class="swiper-slide">
+                                    <div class="block__button">
+
+                                        <div class="swiper-slide"><img src="./img/slide-1-8.webp" alt="i"></div>
+
+                                        <a class="button buttonInfo" target="_blank" href="https://github.com/smnlbdv?tab=repositories">Подробнее на GitHub</a>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="swiper-pagination"></div>
                         </div>
-                        <div class="block__button">
-                            <button class="button buttonInfo">Подробнее</button>
-                        </div>
-                        <div class="work_block-info">
-                            <p class="text__info">
-                                Девятидневный тур «Увидеть максимум» - это незабываемое путешествие, которое оставит в памяти яркие впечатления на всю жизнь! Если ты ищешь комфортное путешествие, полное разнообразия и увлекательных приключений, то этот тур как раз для тебя.
-                            </p>
-                            <a class="link__info" href="https://smnlbdv.github.io/Travel-Agency/"></a>
-                        </div>
+                        
+                        <div class="swiper-pagination"></div>
+
                     </div>
-                    <div class="section__work_item">
-                        <p class="work_item-title">InstaWidget</p>
-                        <div class="swiper">
+
+                    <div class="section-work__item section-work__item_2">
+
+                        <span class="item__title">2. Report Fraud</span>
+
+                        <div class="swiper swiper_2">
                             <div class="swiper-wrapper">
-                                <div class="swiper-slide"><img src="./assets/images/slide-1-1.jpg" alt="Main page site"></div>
-                                <div class="swiper-slide"><img src="./assets/images/slide-1-2.jpg" alt="Website builder"></div>
-                                <div class="swiper-slide"><img src="./assets/images/slide-1-3.jpg" alt="Work examples"></div>
-                                <div class="swiper-slide"><img src="./assets/images/slide-1-4.jpg" alt="Order payment"></div>
+                                <div class="swiper-slide"><img src="./img/slide-2-1.webp" alt="i"></div>
+                                <div class="swiper-slide"><img src="./img/slide-2-2.webp" alt="i"></div>
+                                <div class="swiper-slide"><img src="./img/slide-2-3.webp" alt="i"></div>
+                                <div class="swiper-slide"><img src="./img/slide-2-4.webp" alt="i"></div>
+                                <div class="swiper-slide">
+                                    <div class="block__button">
+
+                                        <div class="swiper-slide"><img src="./img/slide-2-5.webp" alt="i"></div>
+
+                                        <a class="button buttonInfo" target="_blank" href="https://github.com/smnlbdv?tab=repositories">Подробнее на GitHub</a>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="swiper-pagination"></div>
                         </div>
-                        <div class="block__button">
-                            <button class="button buttonInfo">Подробнее</button>
-                        </div>
-                        <div class="work_block-info">
-                            <p class="text__info">
-                                Виджет — это ссылка на ваш Instagram, которую мы размещаем на сайте и она ведёт в соцсеть.
-                                При работе с «ВКонтакте» и Facebook можно использовать их официальные плагины для установки
-                                виджетов. Для Instagram пока нет готового кода, поэтому мы предлагаем воспользоваться нашим
-                                сервисом.
-                            </p>
-                            <a class="link__info" href="https://github.com/smnlbdv/Instagram-Widget"></a>
-                        </div>
+                        
+                        <div class="swiper-pagination"></div>
+
                     </div>
-                    <div class="section__work_item">
-                        <p class="work_item-title">Lease cars</p>
-                        <div class="swiper">
+
+                    <div class="section-work__item section-work__item_3">
+
+                        <span class="item__title">3. Тереньтьевы</span>
+
+                        <div class="swiper swiper_3">
                             <div class="swiper-wrapper">
-                                <div class="swiper-slide"><img src="./assets/images/slide-2-1.jpg" alt="Main page site"></div>
-                                <div class="swiper-slide"><img src="./assets/images/slide-2-2.jpg" alt="Advantages"></div>
-                                <div class="swiper-slide"><img src="./assets/images/slide-2-3.jpg" alt="Video review"></div>
-                                <div class="swiper-slide"><img src="./assets/images/slide-2-4.jpg" alt="Catalog"></div>
-                                <div class="swiper-slide"><img src="./assets/images/slide-2-5.jpg" alt="Contact"></div>
+                                <div class="swiper-slide"><img src="./img/slide-3-1.webp" alt="i"></div>
+                                <div class="swiper-slide"><img src="./img/slide-3-2.webp" alt="i"></div>
+                                <div class="swiper-slide"><img src="./img/slide-3-3.webp" alt="i"></div>
+                                <div class="swiper-slide"><img src="./img/slide-3-4.webp" alt="i"></div>
+                                <div class="swiper-slide"><img src="./img/slide-3-5.webp" alt="i"></div>
+                                <div class="swiper-slide">
+                                    <div class="block__button">
+
+                                        <div class="swiper-slide"><img src="./img/slide-3-6.webp" alt="i"></div>
+
+                                        <a class="button buttonInfo" target="_blank" href="https://github.com/smnlbdv?tab=repositories">Подробнее на GitHub</a>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="swiper-pagination"></div>
                         </div>
-                        <div class="block__button">
-                            <button class="button buttonInfo">Подробнее</button>
-                        </div>
-                        <div class="work_block-info">
-                            <p class="text__info">
-                                D&M — одна из крупнейших в Великобритании независимых компаний,
-                                специализирующихся на лизинге автомобилей. Основанная в 2004 году, мы уже более
-                                19 лет поставляем автомобили в лизинг тысячам довольных клиентов по всей Великобритании. Данный сайт
-                                содержит подробную информацию о данной компании, на нем можно посмотреть какие авто находятся в наличии, если
-                                пользователю понравится какой-либо автомобиль он может оставить контактный номер и с ним свяжутся.
-                            </p>
-                            <a class="link__info" href="https://github.com/smnlbdv/Welcome_To_D-M_Leasing"></a>
-                        </div>  
+                        
+                        <div class="swiper-pagination"></div>
+
                     </div>
+
+                    <div class="section-work__item section-work__item_4">
+
+                        <span class="item__title">4. AnniPack</span>
+
+                        <div class="swiper swiper_4">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><img src="./img/slide-4-1.webp" alt="i"></div>
+                                <div class="swiper-slide"><img src="./img/slide-4-2.webp" alt="i"></div>
+                                <div class="swiper-slide"><img src="./img/slide-4-3.webp" alt="i"></div>
+                                <div class="swiper-slide">
+                                    <div class="block__button">
+
+                                        <div class="swiper-slide"><img src="./img/slide-4-4.webp" alt="i"></div>
+
+                                        <a class="button buttonInfo" target="_blank" href="https://github.com/smnlbdv?tab=repositories">Подробнее на GitHub</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="swiper-pagination"></div>
+
+                    </div>
+
+                    <div class="section-work__item section-work__item_5">
+
+                        <span class="item__title">5. ORT</span>
+
+                        <div class="swiper swiper_5">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><img src="./img/slide-5-1.webp" alt="i"></div>
+                                <div class="swiper-slide"><img src="./img/slide-5-2.webp" alt="i"></div>
+                                <div class="swiper-slide"><img src="./img/slide-5-3.webp" alt="i"></div>
+                                <div class="swiper-slide">
+                                    <div class="block__button">
+
+                                        <div class="swiper-slide"><img src="./img/slide-5-4.webp" alt="i"></div>
+
+                                        <a class="button buttonInfo" target="_blank" href="https://github.com/smnlbdv?tab=repositories">Подробнее на GitHub</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="swiper-pagination"></div>
+
+                    </div>
+
                 </section>
-            </div>
+
         </section>
-        <div id="popupBurger" class="popup__burger"></div>
-        <div class="popup__info">
-            <div class="popup__inner">
-                <div class="inner__block">
-                    <h3 class="inner__title"></h3>
-                    <svg class="svg" width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M40.1361 3.86233C40.9538 2.9792 40.9538 1.54548 40.1361 0.662347C39.0458 -0.220782 37.6829 -0.220782 36.8652 0.662347L20.2384 17.1611L3.88413 0.662347C2.79385 -0.220782 1.431 -0.220782 0.613284 0.662347C-0.204428 1.54548 -0.204428 2.9792 0.613284 3.86233L17.2401 20.361L0.613284 36.8625C-0.204428 37.7456 -0.204428 39.1766 0.613284 40.0597C1.431 40.9456 2.79385 40.9456 3.88413 40.0597L20.2384 23.561L36.8652 40.0597C37.6829 40.9456 39.0458 40.9456 40.1361 40.0597C40.9538 39.1766 40.9538 37.7456 40.1361 36.8625L23.5092 20.361L40.1361 3.86233Z" fill=""/>
-                    </svg>
-                    <p class="inner__text"></p>
-                    <button class="button inner__button"><a class="button__link_info" href="#" target="_blank">Git Hub</a></button>
-                </div>
-            </div>
-        </div>
+
     </main>
     <footer>
+
         <p class="footer__text">
             <a target="_blank" href="https://www.instagram.com/sm.llllllllll/">designed by smnlbdw</a>
         </p>
+
     </footer>
-    <script src="./assets/js/index.js"></script>
+    <script src="./js/main-min.js"></script>
 </body>
 </html>
