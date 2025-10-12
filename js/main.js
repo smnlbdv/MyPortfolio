@@ -1,9 +1,6 @@
 //**Создание слайдеров**//
 const swiper1 = new Swiper('.swiper_1', {
     loop: true,
-    autoplay: {
-      delay: 3000
-    },
     pagination: {
         el: ".section-work__item_1 .swiper-pagination",
         dynamicBullets: true,
@@ -16,9 +13,6 @@ const swiper1 = new Swiper('.swiper_1', {
 
 const swiper2 = new Swiper('.swiper_2', {
     loop: true,
-    autoplay: {
-      delay: 3000
-    },
     pagination: {
         el: ".section-work__item_2 .swiper-pagination",
         dynamicBullets: true,
@@ -31,9 +25,6 @@ const swiper2 = new Swiper('.swiper_2', {
 
 const swiper3 = new Swiper('.swiper_3', {
     loop: true,
-    autoplay: {
-      delay: 3000
-    },
     pagination: {
         el: ".section-work__item_3 .swiper-pagination",
         dynamicBullets: true,
@@ -46,9 +37,6 @@ const swiper3 = new Swiper('.swiper_3', {
 
 const swiper4 = new Swiper('.swiper_4', {
     loop: true,
-    autoplay: {
-      delay: 3000
-    },
     pagination: {
         el: ".section-work__item_4 .swiper-pagination",
         dynamicBullets: true,
@@ -61,9 +49,6 @@ const swiper4 = new Swiper('.swiper_4', {
 
 const swiper5 = new Swiper('.swiper_5', {
     loop: true,
-    autoplay: {
-      delay: 3000
-    },
     pagination: {
         el: ".section-work__item_5 .swiper-pagination",
         dynamicBullets: true,
