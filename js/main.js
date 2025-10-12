@@ -85,12 +85,11 @@ const spanBlock = document.querySelector('.span-block'),
   innerMenu = document.querySelector('.header__menu'),
   observerSection = new IntersectionObserver(onEntry, options),
   elements = document.querySelector('.section-about'),
-  elements1 = document.querySelectorAll('.section__work_item'),
+  elements1 = document.querySelectorAll('.section-work__item'),
   linkElement = document.querySelector('.link1'),
   linkElement2 = document.querySelector('.link2'),
   linkAboutMe = document.querySelector('.section-about'),
   linkWork = document.querySelector('.section-work');
-
 
 function onEntry(entry) {
   entry.forEach(change => {
@@ -133,26 +132,4 @@ observerLinkTwo.observe(linkWork);
 window.onload = function () {
   let preloader = document.getElementById('preloader');
   preloader.style.display = 'none'
-}
-
-//**Функционал бургер меню**//
-spanBlock.addEventListener('click', openPopupBurger)
-
-function openPopupBurger() {
-  document.querySelector('body').classList.toggle('noscroll')
-  spanBlock.classList.toggle('active-span')
-  popupBurger.classList.toggle('active')
-  popupBurger.innerHTML = ""
-  const cloneMenu = innerMenu.cloneNode(true)
-  popupBurger.append(cloneMenu)
-  const menuLink = popupBurger.querySelectorAll('.menu-list__item')
-  menuLink.forEach(link => {
-    link.addEventListener('click', clickLink)
-  });
-}
-
-function clickLink() {
-  document.querySelector('body').classList.toggle('noscroll')
-  popupBurger.classList.remove('active')
-  spanBlock.classList.toggle('active-span')
 }
